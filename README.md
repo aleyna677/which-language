@@ -247,3 +247,7 @@ Treat that write-up as **historical benchmark context**, not as the entire ident
 - Want internal architecture? → [CLAUDE.md](./CLAUDE.md)
 - Want future integrations? → [ROADMAP.md](./ROADMAP.md)
 - Want codex comparison notes? → [CODEX_COMPARISON.md](./CODEX_COMPARISON.md)
+
+## Similar projects
+- https://autocodebench.github.io
+- https://livecodebench.github.io
