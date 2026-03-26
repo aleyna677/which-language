@@ -41,8 +41,8 @@ codexes:
       price_input_1m: 0.25
       price_output_1m: 1.50
 
-  aider:
-    enabled: true
+ aider:
+    enabled: false
     class: AiderCodex
     description: >
       CLI-based autonomous coding agent. Uses local 'aider' installation 
