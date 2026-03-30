@@ -1,0 +1,24 @@
+PROJECT: mini-vocab
+AUTHOR: Aleyna Akın 251478072
+VERSION: v2
+DATE: 2026-03-30
+
+========================================
+CHANGES FROM V1
+========================================
+- Added 'search' command to find specific words.
+- Clarified error message for missing translations.
+
+========================================
+NEW COMMANDS
+========================================
+--- search ---
+Usage: python minivocab.py search "apple"
+Checks words.dat for the given word.
+If found, prints: "[FOUND] apple : elma"
+If not found, prints: "Word 'apple' not found."
+
+========================================
+ERROR HANDLING
+========================================
+- If search term is empty: print "Please provide a word to search."
