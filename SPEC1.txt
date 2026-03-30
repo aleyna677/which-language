@@ -1,0 +1,59 @@
+PROJECT: mini-vocab
+AUTHOR: Öğrenci Adı (No)
+VERSION: v1
+DATE: 2026-03-12
+
+========================================
+OVERVIEW
+========================================
+mini-vocab is a command-line vocabulary learning tool.
+It allows users to save words with their translations
+and track their learning progress.
+
+Data is stored in a directory called .minivocab/
+in the current working directory.
+
+========================================
+COMMANDS
+========================================
+
+--- init ---
+Usage: python minivocab.py init
+Creates a .minivocab/ directory and an empty words.dat file.
+If directory exists, print "Already initialized" and exit.
+
+--- add ---
+Usage: python minivocab.py add "apple" "elma"
+Appends a new word pair to words.dat.
+Status is set to 'LEARNING' by default.
+Format: word|translation|status|date
+Prints: "Added: apple -> elma"
+
+--- list ---
+Usage: python minivocab.py list
+(V0 Note: This will only show the raw file content or a message)
+Prints all saved words in the format:
+[LEARNING] apple : elma
+If empty, prints "Vocabulary is empty."
+
+--- remove ---
+Usage: python minivocab.py remove "apple"
+Removes the specific word from words.dat.
+Prints: "Word 'apple' removed."
+If not found, prints: "Word 'apple' not found."
+
+========================================
+DATA FORMAT
+========================================
+File: .minivocab/words.dat
+Fields: word|translation|status|created_date
+Example:
+apple|elma|LEARNING|2026-03-12
+book|kitap|LEARNING|2026-03-12
+
+========================================
+ERROR HANDLING
+========================================
+- Command before init: "Not initialized. Run: python minivocab.py init"
+- Unknown command: "Unknown command: <command>"
+- Missing arguments: "Usage: python minivocab.py <command> [args]"
